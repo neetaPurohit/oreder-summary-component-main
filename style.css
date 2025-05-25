@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    font-family: "Red Hat Display", sans-serif;
+   min-height: 100vh;
+    background: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    position: relative;
+    margin: 40px 20px; 
+}
+.container{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 450px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.text-content{
+  padding: 7%;
+  text-align: center;
+}
+.title{
+  color:hsl(223, 47%, 23%);
+  font-weight: bolder;
+}
+.subtitle{
+  margin: 5%;
+  line-height: 1.6em;
+  color: hsl(224, 23%, 55%);
+}
+.plan-box{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+}
+.plan-box-left{
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  gap: 20px;
+}
+.plan-box-left div{
+  line-height: 1.5;
+}
+.plan-box-left h5{
+  color: hsl(223, 47%, 23%); 
+  font-weight: bold;
+  font-size: 16px;
+}
+.btns {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Proceed Button */
+.proceed-btn {
+  background-color: #382ae1;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  padding: 14px 60px;
+  border-radius: 12px;
+  box-shadow: 0 15px 25px rgba(56, 42, 225, 0.25);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.proceed-btn:hover {
+  background-color:hsl(224, 23%, 55%);
+  box-shadow: 0 10px 20px rgba(56, 42, 225, 0.35);
+}
+
+/* Cancel Button */
+.cancel-btn {
+  color: #6b7280;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.cancel-btn:hover {
+  color: hsl(223, 47%, 23%);
+}
+
