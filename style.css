@@ -7,7 +7,7 @@
 body{
     font-family: "Red Hat Display", sans-serif;
    min-height: 100vh;
-    background: url(/images/pattern-background-desktop.svg);
+    background: url(./images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-color: hsl(225, 100%, 94%);
@@ -96,3 +96,52 @@ body{
   color: hsl(223, 47%, 23%);
 }
 
+/* media query */
+@media (max-width: 500px) {
+
+  .container {
+    width: 90%;
+    margin: 50px auto;
+    position: static;
+    transform: none;
+  }
+  .hero img {
+    width: 100%;
+    display: block;
+  }
+
+  .hero {
+    width: 100%;
+    overflow: hidden;
+  }
+  .text-content {
+    padding: 20px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    margin: 16px 0;
+  }
+
+  .plan-box {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .plan-box-left {
+    padding: 0;
+    gap: 10px;
+  }
+
+  .btns {
+    margin-top: 20px;
+    gap: 10px;
+  }
+
+  .proceed-btn {
+    width: 100%;
+    padding: 12px 0;
+  }
+}
